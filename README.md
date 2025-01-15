@@ -12,7 +12,7 @@ This project is a React-based Todo Application that leverages the Context API fo
 
 ## Live Demo
 
-Access the live application here: (https://internshalaassignment4-4e7f0qlsy-samiths-projects-7af474ec.vercel.app/login)
+Access the live application here: [vercel live website](https://internshalaassignment4-4e7f0qlsy-samiths-projects-7af474ec.vercel.app)
 
 ## Screenshots
 
