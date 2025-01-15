@@ -16,7 +16,7 @@ Access the live application here: [vercel live website](https://internshalaassig
 
 ## Screenshots
 
-![darkThemeScreenshot.png](https://raw.githubusercontent.com/golu7059/Advanced-Todo/main/public/lightThemeScreenshot.png)
+![darkThemeScreenshot.png](public/lightpagewithsidebar.png)
 *Home page in light theme with tasks and completed section.*
 
 ![Adding a Task](https://raw.githubusercontent.com/golu7059/Advanced-Todo/main/public/withoutSideBar.png)
