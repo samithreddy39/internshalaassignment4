@@ -12,7 +12,7 @@ const Login = () => {
         e.preventDefault();
 
         // Mock user credentials
-        const mockUser = { username: "testuser", password: "password123" };
+        const mockUser = { username: "sampleusername", password: "samplepassword" };
 
         // Validate credentials
         if (username === mockUser.username && password === mockUser.password) {
@@ -57,8 +57,8 @@ const Login = () => {
                 </form>
                 <div className="mt-4 text-sm text-gray-500">
                     <p>Use the following credentials:</p>
-                    <p><strong>Username:</strong> testuser</p>
-                    <p><strong>Password:</strong> password123</p>
+                    <p><strong>Username:</strong> sampleusername</p>
+                    <p><strong>Password:</strong> samplepassword</p>
                 </div>
             </div>
         </div>
