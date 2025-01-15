@@ -1,4 +1,4 @@
-# Todos Application with Context API
+# Advanced Todo Application with Context API
 
 This project is a React-based Todo Application that leverages the Context API for global state management. It allows users to manage their tasks efficiently with features such as adding tasks, marking tasks as completed, and toggling task importance. The application is fully responsive and includes a dynamic theme switching feature.
 
@@ -6,9 +6,9 @@ This project is a React-based Todo Application that leverages the Context API fo
 
 - **Add Tasks**: Users can add new tasks with optional importance and a due date.
 - **Mark Complete**: Tasks can be marked as completed or uncompleted.
-- **Toggle Importance**: Mark tasks as important for better visibility.
-- **Dynamic Theming**: Light and dark themes available.
-- **Responsive Design**: Optimized for mobile, tablet, and desktop screens.
+- **Set Priority**: Assign high or low priority to tasks for better organization.
+-**Theme Switching**: Switch between light and dark themes to suit your preference.
+-**Responsive Design**: Optimized layout for mobile, tablet, and desktop devices.
 
 ## Live Demo
 
