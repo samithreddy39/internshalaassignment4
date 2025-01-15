@@ -49,7 +49,7 @@ Follow these steps to set up and run the application locally:
    ```bash
    npm start
    ```
-   This command starts the app in development mode. Open [http://localhost:5173/](http://localhost:5173/) to view it in the browser.
+   This command starts the app in development mode. Open [http://localhost:4000/](http://localhost:4000/) to view it in the browser.
 
 4. **Build for Production**
    ```bash
