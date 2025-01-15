@@ -19,10 +19,7 @@ Access the live application here: [vercel live website](https://internshalaassig
 ![lightpagewithsidebar.png](public/lightpagewithsidebar.png)
 *Home page in light theme with tasks and completed section.*
 
-![Adding a Task](https://raw.githubusercontent.com/golu7059/Advanced-Todo/main/public/withoutSideBar.png)
-*Adding a new task to the todo list and the page without sidebar.*
-
-![Home Page - Dark Theme](https://raw.githubusercontent.com/golu7059/Advanced-Todo/main/public/darkThemeScreenshot.png)
+![darkmodewithtaskbarandsidepanel](public/darkmodewithtaskbarandsidepanel.png)
 *Home page in dark theme for better accessibility.*
 
 ## Setup Instructions
