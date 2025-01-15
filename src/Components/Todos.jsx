@@ -1,17 +1,14 @@
+// src/Components/Todos.jsx
 import React, { useContext, useState } from "react";
 import {
-  IoNotificationsOutline,
-  IoRefreshOutline,
-  IoCalendarOutline,
-} from "react-icons/io5";
-import { IoMdNotificationsOutline } from "react-icons/io";
+  IoMdNotificationsOutline,
+} from "react-icons/io";
 import { LuRepeat } from "react-icons/lu";
 import { CiCalendar } from "react-icons/ci";
-import { FaRegStar } from "react-icons/fa";
-import { FaStar } from "react-icons/fa6";
+import { FaRegStar, FaStar } from "react-icons/fa"; // Corrected import for FaStar
 import { GlobalContext } from "../Context/GlobalState";
 
-const Todos = () => {
+const Todos = ({ onSelectTodo }) => { // Accept onSelectTodo as a prop
   const { state, dispatch } = useContext(GlobalContext);
   const [newTask, setNewTask] = useState("");
   const [selectedDate, setSelectedDate] = useState(null);
@@ -41,7 +38,12 @@ const Todos = () => {
   };
 
   const toggleImportant = (id) => {
-  dispatch({ type: "TOGGLE_IMPORTANT", payload: id });
+    dispatch({ type: "TOGGLE_IMPORTANT", payload: id });
+  };
+
+  const handleDateChange = (event) => {
+    const dateValue = event.target.value;
+    setSelectedDate(new Date(dateValue));
   };
 
   return (
@@ -87,9 +89,10 @@ const Todos = () => {
             .map((todo) => (
               <li
                 key={todo.id}
-                className="flex items-center justify-between bg-transparent p-2 border rounded-md"
+                className="flex items-center justify-between bg-transparent p-2 border rounded-md hover:bg-gray-100 transition cursor-pointer"
+                onClick={() => onSelectTodo(todo)} // Handle click to select todo
               >
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
                   <input
                     type="checkbox"
                     checked={todo.completed}
@@ -99,13 +102,20 @@ const Todos = () => {
                   <span>{todo.task}</span>
                 </div>
                 <button
-                  onClick={() => toggleImportant(todo.id)}
-                  className={`text-lg ${
+                  onClick={(e) => {
+                    e.stopPropagation(); // Prevents the click from triggering onSelectTodo
+                    toggleImportant(todo.id);
+                  }}
+                  className={`text-lg ml-4 ${
                     todo.important ? "text-[#357937]" : "text-gray-300"
                   }`}
+                  aria-label={todo.important ? "Mark as not important" : "Mark as important"}
                 >
-                  {!todo.important && <FaRegStar className="text-2xl" />}
-                  {todo.important && <FaStar className="text-2xl" />}
+                  {!todo.important ? (
+                    <FaRegStar className="text-2xl" />
+                  ) : (
+                    <FaStar className="text-2xl" />
+                  )}
                 </button>
               </li>
             ))}

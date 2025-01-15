@@ -16,11 +16,11 @@ const Sidebar = () => {
             {/* User Info */}
             <div className="flex flex-col items-center mb-8">
                 <img
-                    src="https://images.pexels.com/photos/30180208/pexels-photo-30180208/free-photo-of-woman-stands-by-serene-glacier-lake-in-winter.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"
+                    src="public\A generic user avatar with a simple design.png"
                     alt="User Profile"
                     className="rounded-full w-32 h-32 object-cover"
                 />
-                <h1 className={`text-lg font-bold mt-2 ${state.theme === "dark" ? "text-green-600" : "text-green-600"}`}> Golu Kumar</h1>
+                <h1 className={`text-lg font-bold mt-2 ${state.theme === "dark" ? "text-green-600" : "text-green-600"}`}> Hey, ABCD</h1>
             </div>
 
             {/* Navigation Links */}
