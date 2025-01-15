@@ -36,7 +36,7 @@ Follow these steps to set up and run the application locally:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/golu7059/Advanced-Todo.git
+   git clone https://github.com/samithreddy39/internshalaassignment4.git
    cd todos-app
    ```
 
@@ -57,22 +57,8 @@ Follow these steps to set up and run the application locally:
    ```
    This builds the app for production to the `build` folder.
 
-### Deployment
 
-Deploy your application using your preferred free hosting service. Here's an example using Vercel:
 
-1. **Install Vercel CLI**
-   ```bash
-   npm install -g vercel
-   ```
-
-2. **Deploy the Application**
-   ```bash
-   vercel
-   ```
-
-3. **Provide Live URL**
-   Once deployed, you will receive a live URL for the application.
 
 ## Technologies Used
 
@@ -81,21 +67,8 @@ Deploy your application using your preferred free hosting service. Here's an exa
 - **Styling**: TailwindCSS
 - **Hosting**: Vercel
 
-## Contributing
 
-This is a internship Assignment project. Build in short duration of time . So , Contributions are welcome! If you have ideas or bug fixes, feel free to fork the repository and submit a pull request.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [React](https://reactjs.org/)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- [Vercel](https://vercel.com/)
-
----
-
-For any issues or inquiries, please contact [golukumarjaisidih@example.com](mailto:your-email@example.com).
+For any issues or inquiries, please contact (samithchess4@gmail.com).
 
